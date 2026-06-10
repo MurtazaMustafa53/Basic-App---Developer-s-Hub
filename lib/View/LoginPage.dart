@@ -5,6 +5,7 @@ import 'package:basicapp/Model/Validation.dart';
 import 'package:basicapp/View/HomePage.dart';
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Loginpage extends StatelessWidget {
   Loginpage({super.key});
   Validation validation = Validation();
