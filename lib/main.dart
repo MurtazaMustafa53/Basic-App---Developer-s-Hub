@@ -1,4 +1,5 @@
-import 'package:basicapp/View/LoginPage.dart';
+import 'package:basicapp/View/Homepage.dart';
+import 'package:basicapp/View/Loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Basic App",
-      home: Loginpage(),
+      home: HomePage(),
     );
   }
 }

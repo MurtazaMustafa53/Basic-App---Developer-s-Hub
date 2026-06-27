@@ -1,18 +1,29 @@
 // ignore_for_file: body_might_complete_normally_nullable
 
-import 'package:basicapp/Model/CustomTextFormFeild.dart';
+import 'package:basicapp/Model/Customtextformfield.dart';
 import 'package:basicapp/Model/Validation.dart';
 import 'package:basicapp/View/HomePage.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class Loginpage extends StatelessWidget {
+class Loginpage extends StatefulWidget {
   Loginpage({super.key});
+
+  @override
+  State<Loginpage> createState() => _LoginpageState();
+}
+
+class _LoginpageState extends State<Loginpage> {
   Validation validation = Validation();
+
   final TextEditingController _email = TextEditingController();
+
   final TextEditingController _password = TextEditingController();
+
   final _formKey = GlobalKey<FormState>();
+
   final String _mail = "abc@gmail.com";
+
   final String _pass = "1234567890";
 
   @override
@@ -68,7 +79,7 @@ class Loginpage extends StatelessWidget {
                         );
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Homepage()),
+                          MaterialPageRoute(builder: (context) => HomePage()),
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(

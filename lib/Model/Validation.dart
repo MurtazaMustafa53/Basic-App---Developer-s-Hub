@@ -1,6 +1,6 @@
 class Validation {
   String? emailValidation(String? value) {
-    if (value!.isEmpty) {
+    if (value == null || value.isEmpty) {
       return "The email is required";
     }
     if (!value.contains('@') || !value.contains('.')) {
@@ -10,7 +10,7 @@ class Validation {
   }
 
   String? passwordValidation(String? value) {
-    if (value!.isEmpty) {
+    if (value == null || value.isEmpty) {
       return "The password is Required";
     }
     return null;
