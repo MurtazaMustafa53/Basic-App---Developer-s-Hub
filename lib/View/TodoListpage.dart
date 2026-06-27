@@ -47,6 +47,7 @@ class _TodolistpageState extends State<Todolistpage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    loadlistvalue();
   }
 
   @override
