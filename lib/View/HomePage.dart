@@ -1,5 +1,6 @@
 import 'package:basicapp/Model/Customcard.dart';
 import 'package:basicapp/View/Counterpage.dart';
+import 'package:basicapp/View/TodoListpage.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -53,6 +54,9 @@ class HomePage extends StatelessWidget {
                       );
                     },
                   ),
+                  Customcard(title: "To-do Lists", icon: Icons.list, color: Colors.lightGreenAccent, onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Todolistpage()));
+                  })
                 ],
               ),
             ),
